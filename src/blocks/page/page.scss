@@ -33,6 +33,7 @@
   min-width: 320px;
   min-height: 100%;
   scroll-behavior: smooth;
+  font-size: 62.5%;
 
   &__inner {
     display: flex;
@@ -68,8 +69,6 @@ body {
   font-family: $font-family;
   line-height: $line-height;
   text-align: left;
-  color: #eee;
-  background-color: #444;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -197,20 +196,12 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+  margin: 0;
   font-family: $font-family;
   font-weight: 700;
   line-height: 1.2;
   color: currentColor;
 }
-
-h1 { font-size: $font-size-h1; } // stylelint-disable-line
-h2 { font-size: $font-size-h2; } // stylelint-disable-line
-h3 { font-size: $font-size-h3; } // stylelint-disable-line
-h4 { font-size: $font-size-h4; } // stylelint-disable-line
-h5 { font-size: $font-size-h5; } // stylelint-disable-line
-h6 { font-size: $font-size-h6; } // stylelint-disable-line
 
 p,
 ul,

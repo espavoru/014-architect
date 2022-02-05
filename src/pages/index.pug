@@ -6,14 +6,23 @@ append config
     currentDescription = 'Architect'
     currentUrl = 'index.html'
 
+block header
+  .page-header__menu
+    .page-header__menu-line
+    .page-header__menu-line
+    .page-header__menu-line
+  +page-header()#home
+    +picture({
+      'img': 'page-header-bg-01',
+      'alt': 'Interior Design',
+      'lg': true,
+      'md': true,
+      'ext': 'jpg'
+    }, 'page-header__bg-img').page-header__img-wrapper
+    .page-header__banner
+      h1 Architecture & Interior Design
+      p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, labore!
+      +btn('Discover Now')(class='page-header__btn', href='#')
+  ///.page-header
+
 block content
-
-  h1 Top news
-
-  ol
-    li Man Found Having Tea Party With Donkey Again
-    li Woman With Epic Tattoo Arrested for 37th Time
-    li Viral Photo of Donkey Had Been Photoshopped
-    li Man Buys Hats For Low Income Local Family
-    li Man Jailed For Threatening Wife With Crumpled Hawk
-    li Small Tornado Forcast in Northern Regions
