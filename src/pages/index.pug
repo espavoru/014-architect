@@ -11,6 +11,8 @@ block header
     .page-header__menu-line
     .page-header__menu-line
     .page-header__menu-line
+    span.page-header__menu-close Close
+
   +page-header()#home
     +picture({
       'img': 'page-header-bg-01',
@@ -26,3 +28,24 @@ block header
   ///.page-header
 
 block content
+  section.sidebar
+    ul.sidebar__menu
+      li.sidebar__menu-item
+        a.sidebar__menu-link(data-content='Home', href='#home') Home
+      li.sidebar__menu-item
+        a.sidebar__menu-link(data-content='About Us', href='#about-us') About Us
+      li.sidebar__menu-item
+        a.sidebar__menu-link(data-content='Team', href='#team') Team
+      li.sidebar__menu-item
+        a.sidebar__menu-link(data-content='Pricing', href='#pricing') Pricing
+      li.sidebar__menu-item
+        a.sidebar__menu-link(data-content='Contact', href='#contact') Contact
+
+    .sidebar__social
+      a(href='#')
+        i.fab.fa-facebook-f
+      a(href='#')
+        i.fab.fa-instagram
+      a(href='#')
+        i.fab.fa-twitter
+  ///.sidebar

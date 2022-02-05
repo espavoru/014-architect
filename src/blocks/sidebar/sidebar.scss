@@ -1,0 +1,96 @@
+// В этом файле должны быть стили для БЭМ-блока sidebar, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.sidebar {
+
+  $block-name:                &; // #{$block-name}__element
+
+  position: fixed;
+  top: 0;
+  right: -40rem;
+  width: 40rem;
+  height: 100vh;
+
+  transition: right 0.5s;
+  background-color: #fff;
+
+  .change & {
+    right: 0;
+  }
+
+  &__menu {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+
+    transform: translate(-50%, -50%);
+    list-style-type: none;
+  }
+
+  &__menu-item {
+    text-align: center;
+  }
+
+  &__menu-link {
+    display: inline-block;
+    position: relative;
+
+    font-family: 'Baloo Da 2', serif;
+    font-size: 4rem;
+    text-decoration: none;
+    color: #555;
+
+    &::before {
+      content: attr(data-content);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+
+      overflow: hidden;
+      white-space: nowrap;
+      color: #c29525;
+
+      transition: width 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+
+    a {
+      text-decoration: none;
+    }
+
+    i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 4.5rem;
+      height: 4.5rem;
+      margin: 3rem;
+      border-radius: 50%;
+
+      font-size: 2.2rem;
+      color: #fff;
+
+      transition: all 0.3s;
+      background-color: #777;
+
+      &:hover {
+        background-color: #c29525;
+      }
+    }
+  }
+}
