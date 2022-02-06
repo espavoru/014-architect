@@ -149,11 +149,57 @@ document.addEventListener("DOMContentLoaded", () => {
         <!--/.about-us__services-->
       </section>
       <!--/.about-us-->
+      <section class="team" id="team">
+        <div class="section-header">
+          <h2 class="section-header__heading">Our Team</h2>
+          <div class="section-header__underline"></div>
+        </div>
+        <div class="team__cards-wrapper">
+          <div class="team__card" data-tilt>
+            <picture class="picture team__img-wrapper">
+              <source media="(min-width: 640px)" type="image/webp" srcset="img/team-01-640p.webp, img/team-01-1280p.webp 2x" />
+              <source media="(min-width: 640px)" type="image/png" srcset="img/team-01-640p.png, img/team-01-1280p.png 2x" />
+              <source media="(min-width: 0)" type="image/webp" srcset="img/team-01-320p.webp, img/team-01-640p.webp 2x" /><img class="team__img" alt="CEO" width="320" src="img/team-01-320p.png" srcset="img/team-01-640p.png 2x" />
+            </picture>
+            <div class="team__card-info">
+              <h3>John Smith</h3>
+              <h4>CEO</h4>
+              <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, labore!"</p><a class="btn team__card-btn" href="#">Read More</a>
+            </div>
+          </div>
+          <div class="team__card" data-tilt>
+            <picture class="picture team__img-wrapper">
+              <source media="(min-width: 640px)" type="image/webp" srcset="img/team-02-640p.webp, img/team-02-1280p.webp 2x" />
+              <source media="(min-width: 640px)" type="image/png" srcset="img/team-02-640p.png, img/team-02-1280p.png 2x" />
+              <source media="(min-width: 0)" type="image/webp" srcset="img/team-02-320p.webp, img/team-02-640p.webp 2x" /><img class="team__img" alt="Designer" width="320" src="img/team-02-320p.png" srcset="img/team-02-640p.png 2x" />
+            </picture>
+            <div class="team__card-info">
+              <h3>Ann Brown</h3>
+              <h4>Designer</h4>
+              <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, labore!"</p><a class="btn team__card-btn" href="#">Read More</a>
+            </div>
+          </div>
+          <div class="team__card" data-tilt>
+            <picture class="picture team__img-wrapper">
+              <source media="(min-width: 640px)" type="image/webp" srcset="img/team-03-640p.webp, img/team-03-1280p.webp 2x" />
+              <source media="(min-width: 640px)" type="image/png" srcset="img/team-03-640p.png, img/team-03-1280p.png 2x" />
+              <source media="(min-width: 0)" type="image/webp" srcset="img/team-03-320p.webp, img/team-03-640p.webp 2x" /><img class="team__img" alt="Architect" width="320" src="img/team-03-320p.png" srcset="img/team-03-640p.png 2x" />
+            </picture>
+            <div class="team__card-info">
+              <h3>Mary Doe</h3>
+              <h4>Architect</h4>
+              <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, labore!"</p><a class="btn team__card-btn" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!--/.team__cards-wrapper(data-tilt)-->
+      </section>
+      <!--/.team-->
       <footer class="page-footer" role="contentinfo">
         <div class="page-footer__inner"></div>
       </footer>
     </div>
-  </div><script defer src="js/bundle.js">
+  </div><script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script defer src="js/bundle.js">
   </script>
 
 </body>
