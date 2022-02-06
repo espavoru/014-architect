@@ -24,6 +24,7 @@ let config = {
   ],
   'addJsBefore': [
     // 'somePackage/dist/somePackage.js', // для 'node_modules/somePackage/dist/somePackage.js',
+    './utils/tilt.jquery.js',
   ],
   'addJsAfter': [
     './script.js',

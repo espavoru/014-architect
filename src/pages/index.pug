@@ -108,3 +108,54 @@ block content
       }, 'about-us__img').about-us__img-wrapper
     ///.about-us__services
   ///.about-us
+
+  section.team#team
+    .section-header
+      h2.section-header__heading Our Team
+      .section-header__underline
+
+    .team__cards-wrapper
+      .team__card(data-tilt)
+        +picture({
+          'img': 'team-01',
+          'alt': 'CEO',
+          'lg': false,
+          'md': true,
+          'ext': 'png'
+        }, 'team__img').team__img-wrapper
+        .team__card-info
+          h3 John Smith
+          h4 CEO
+          p "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, labore!"
+          +btn('Read More')(class='team__card-btn', href='#')
+
+      .team__card(data-tilt)
+        +picture({
+          'img': 'team-02',
+          'alt': 'Designer',
+          'lg': false,
+          'md': true,
+          'ext': 'png'
+        }, 'team__img').team__img-wrapper
+        .team__card-info
+          h3 Ann Brown
+          h4 Designer
+          p "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, labore!"
+          +btn('Read More')(class='team__card-btn', href='#')
+
+      .team__card(data-tilt)
+        +picture({
+          'img': 'team-03',
+          'alt': 'Architect',
+          'lg': false,
+          'md': true,
+          'ext': 'png'
+        }, 'team__img').team__img-wrapper
+        .team__card-info
+          h3 Mary Doe
+          h4 Architect
+          p "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, labore!"
+          +btn('Read More')(class='team__card-btn', href='#')
+    ///.team__cards-wrapper(data-tilt)
+
+  ///.team

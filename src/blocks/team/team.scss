@@ -1,0 +1,117 @@
+// В этом файле должны быть стили для БЭМ-блока team, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.team {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 5rem;
+  padding-bottom: 20rem;
+  padding-left: 5rem;
+
+  &__cards-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 8rem;
+  }
+
+  &__card {
+    position: relative;
+    width: 37rem;
+    height: 45rem;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+
+    &:hover {
+      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &__img-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+
+    background-color: #262626;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+
+    #{$block-name}__card:hover & {
+      opacity: 0.5;
+    }
+  }
+
+
+  &__card-info {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+
+    text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+
+    h3 {
+      font-family: 'Baloo Da 2', serif;
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      font-weight: 300;
+      color: #eee;
+    }
+
+    h4 {
+      margin-bottom: 1rem;
+      font-family: Mulish, serif;
+      font-size: 2rem;
+      font-weight: 500;
+      color: #a52a2a;
+    }
+
+    p {
+      width: 80%;
+      margin-bottom: 2rem;
+
+      font-family: 'Baloo Da 2', serif;
+      font-size: 1.4rem;
+      font-weight: 300;
+      line-height: 1.6rem;
+      color: #eee;
+    }
+
+    #{$block-name}__card:hover & {
+      bottom: 2rem;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__card-btn.btn {
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0;
+
+    font-family: 'Baloo Da 2', serif;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    color: #eee;
+
+    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.8);
+    background-color: #c29525;
+  }
+}
