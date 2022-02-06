@@ -37,7 +37,7 @@ block content
       li.sidebar__menu-item
         a.sidebar__menu-link(data-content='Team', href='#team') Team
       li.sidebar__menu-item
-        a.sidebar__menu-link(data-content='Pricing', href='#pricing') Pricing
+        a.sidebar__menu-link(data-content='Pricing', href='#team') Pricing
       li.sidebar__menu-item
         a.sidebar__menu-link(data-content='Contact', href='#contact') Contact
 
@@ -157,5 +157,22 @@ block content
           p "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, labore!"
           +btn('Read More')(class='team__card-btn', href='#')
     ///.team__cards-wrapper(data-tilt)
-
   ///.team
+
+  section.contact#contact
+    .contact__wrapper
+      .contact__bg
+      .contact__content
+        h2.contact__heading Contact
+        form.contact__form
+          .contact__input-group
+            input(type='text')
+            label Full Name
+          .contact__input-group
+            input(type='email')
+            label Email
+          .contact__input-group
+            textarea
+            label.contact__message Message
+          input(type='submit', value='Submit')
+  ///.contact
