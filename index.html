@@ -65,6 +65,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <body><noscript>Enable JavaScript please.</noscript>
   <div class="page__inner">
+    <div class="spinner">
+      <div class="spinner__circles">
+        <div class="spinner__circle"></div>
+        <div class="spinner__circle"></div>
+        <div class="spinner__circle"></div>
+        <div class="spinner__circle"></div>
+        <div class="spinner__circle"></div>
+        <div class="spinner__circle"></div>
+        <div class="spinner__circle"></div>
+        <div class="spinner__circle"></div>
+      </div>
+    </div>
+    <!--/.spinner-->
     <div class="page__content">
       <div class="page-header__menu">
         <div class="page-header__menu-line"></div>
@@ -201,8 +214,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="contact__content">
             <h2 class="contact__heading">Contact</h2>
             <form class="contact__form">
-              <div class="contact__input-group"><input type="text"><label>Full Name</label></div>
-              <div class="contact__input-group"><input type="email"><label>Email</label></div>
+              <div class="contact__input-group"><input type="text" name="name"><label>Full Name</label></div>
+              <div class="contact__input-group"><input type="email" name="email"><label>Email</label></div>
               <div class="contact__input-group"><textarea></textarea><label class="contact__message">Message</label></div><input type="submit" value="Submit">
             </form>
           </div>
@@ -210,8 +223,12 @@ document.addEventListener("DOMContentLoaded", () => {
       </section>
       <!--/.contact-->
       <footer class="page-footer" role="contentinfo">
-        <div class="page-footer__inner"></div>
+        <div class="page-footer__inner">
+          <p class="page-footer__copyright">Copyright &copy; 2022, CodeAndCreate - All Rights Reserved</p>
+          <div class="page-footer__social-list"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div><a class="page-footer__scroll-btn" href="#home"><i class="fas fa-arrow-up"></i></a>
+        </div>
       </footer>
+      <!--/.page-footer-->
     </div>
   </div><script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script defer src="js/bundle.js">
   </script>
